@@ -1,5 +1,5 @@
 #  Popupwindow的使用
-div id="article_content" class="article_content">
+<div id="article_content" class="article_content">
 
 <p><span style="font-family:SimSun; font-size:18px; line-height:26px">PopupWindow在</span><a target="_blank" target="_blank" href="http://lib.csdn.net/base/15" class="replace_word" title="Android知识库" style="text-decoration:none; font-family:SimSun; font-size:18px; line-height:26px"><span style="color:#000000">Android</span></a><span style="font-family:SimSun; font-size:18px; line-height:26px">.widget包下，<span style="font-family:Helvetica,Tahoma,Arial,sans-serif; font-size:14px; line-height:25.2px">项目中经常会使用到<span style="font-family:Tahoma,Arial,Helvetica,sans-serif; font-size:15px; line-height:27px">PopupWindow</span>做菜单选项</span>，<span style="font-family:Tahoma,Arial,Helvetica,sans-serif; font-size:15px; line-height:27px">&nbsp;
  PopupWindow这个类用来实现一个弹出框，</span><span style="font-family:Tahoma,Arial,Helvetica,sans-serif; font-size:15px; line-height:27px"><strong>可<span style="color:#ff0000">以使用任意布局的View作为其内容</span></strong></span><span style="font-family:Tahoma,Arial,Helvetica,sans-serif; font-size:15px; line-height:27px">，这个弹出框是悬浮在当前activity之上的。</span></span></p>
