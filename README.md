@@ -80,11 +80,4 @@
 </span></span></span></p>
 <p style="margin-top:0px; margin-bottom:1.1em; padding-top:0px; padding-bottom:0px; line-height:35px">
 <span style="font-family:Microsoft YaHei; font-size:14px"><span style="font-family:'Microsoft Yahei'; font-size:16px; line-height:28px; text-indent:32px"><span style="color:rgb(51,51,51); font-family:'Microsoft Yahei'; font-size:16px; line-height:28px; text-indent:32px">运行效果是一样的。</span></span></span></p>
-<p style="margin-top:0px; margin-bottom:1.1em; padding-top:0px; padding-bottom:0px; line-height:35px">
-<span style="font-family:Microsoft YaHei; font-size:18px; color:#cc0000"><span style="font-family:'Microsoft Yahei'; line-height:28px; text-indent:32px"><span style="font-family:'Microsoft Yahei'; line-height:28px; text-indent:32px">源码下载：</span></span></span></p>
-<p style="margin-top:0px; margin-bottom:1.1em; padding-top:0px; padding-bottom:0px; line-height:35px">
-CSDN下载地址：<span style="font-size:14px"><a target="_blank" target="_blank" href="http://download.csdn.net/detail/dickyqie/9586254">http://download.csdn.net/detail/dickyqie/9586254</a></span></p>
-<p style="margin-top:0px; margin-bottom:1.1em; padding-top:0px; padding-bottom:0px; line-height:35px">
-github下载地址：<span style="font-size:14px; color:#cc0000"><a target="_blank" href="https://github.com/DickyQie/StatusBarDemo">https://github.com/DickyQie/StatusBarDemo</a></span></p>
-   
 </div>
