@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--
+    alignItems属性定义项目在副轴轴上如何对齐。
+
+    flex-start：交叉轴的起点对齐。
+
+    flex-end：交叉轴的终点对齐。
+
+    center：交叉轴的中点对齐。
+
+    baseline: 项目的第一行文字的基线对齐。
+
+    stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
+    -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" alignItems属性操作"
+        android:layout_marginTop="5dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="flex-end"
+            />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="center"
+            />
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="baseline"
+            />
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stretch"
+            />
+    </LinearLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/flexbox_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="9dp"
+        app:alignItems="flex_start">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            app:layout_flexBasisPercent="50%"
+            android:background="@color/colorAccent"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            app:layout_flexBasisPercent="20%"
+            android:background="@color/colorPrimary"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            app:layout_flexBasisPercent="30%"
+            android:background="@color/colorAccent"
+            />
+    </com.google.android.flexbox.FlexboxLayout>
+
+
+</LinearLayout>

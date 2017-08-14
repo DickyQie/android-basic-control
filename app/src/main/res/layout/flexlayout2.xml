@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+    layout_flexGrow
+
+    layout_flexGrow 属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。
+    一张图看懂。跟 LinearLayout 中的weight属性一样。
+    -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" layout_flexGrow属性操作"
+        android:layout_marginTop="5dp"
+        />
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/flexbox_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_marginTop="9dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_flexGrow="1"
+            android:background="@color/colorAccent"
+            />
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="80dp"
+            app:layout_alignSelf="center"
+            android:background="@color/colorPrimary"
+            />
+        <!--
+        layout_alignSelf
+
+        layout_alignSelf  属性允许单个子元素有与其他子元素不一样的对齐方式，
+        可覆盖 alignItems 属性。默认值为auto，表示继承父元素的 alignItems 属性，
+        如果没有父元素，则等同于stretch。
+
+        auto (default)
+
+        flex_start
+
+        flex_end
+
+        center
+
+        baseline
+
+        stretch
+        -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_alignSelf="flex_end"
+            app:layout_flexGrow="1"
+            android:background="@color/colorAccent"
+            />
+    </com.google.android.flexbox.FlexboxLayout>
+
+
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/flexbox_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        app:flexWrap="wrap">
+    </com.google.android.flexbox.FlexboxLayout>
+
+
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="9dp"
+        app:flexWrap="wrap">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_greey_roval_share"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="13sp"
+            android:textColor="@color/colorAccent"
+            android:text="婚姻育儿"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_greey_roval_share"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="13sp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="15dp"
+            android:text="散文"
+            />
+    </com.google.android.flexbox.FlexboxLayout>
+
+</LinearLayout>

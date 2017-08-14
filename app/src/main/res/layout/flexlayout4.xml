@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <!--
+    alignContent
+    表示控件在副轴上的对齐方向（针对多行元素），默认值为stretch，
+    表示占满整个副轴，因为上文中我把FlexboxLayout的高度设置为包裹内容，
+    所以这个属性大家可能没看到效果，这里我把FlexboxLayout的高度改为match_parent，
+    -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" alignContent 属性操作"
+        android:layout_marginTop="5dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="flex-end"
+            android:textSize="9sp"
+            />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="center"
+            android:textSize="9sp"
+            />
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="space_between"
+            android:textSize="9sp"
+            />
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="space_around"
+            android:textSize="9sp"
+            />
+    </LinearLayout>
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/flexbox_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:alignContent="flex_start"
+        app:flexWrap="wrap"
+        app:alignItems="center"
+        >
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="@dimen/flex_item_length2"
+            android:layout_height="@dimen/flex_item_length"
+            android:background="@color/colorAccent"
+            android:text="@string/one" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="@dimen/flex_item_length3"
+            android:layout_height="@dimen/flex_item_length"
+            android:background="@color/colorPrimary"
+            android:text="@string/two" />
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="@dimen/flex_item_length"
+            android:layout_height="@dimen/flex_item_length"
+            android:background="@color/colorAccent"
+            android:text="@string/three" />
+        <TextView
+            android:layout_width="@dimen/flex_item_length3"
+            android:layout_height="@dimen/flex_item_length"
+            android:background="@color/colorPrimary"
+            android:text="4" />
+
+        <TextView
+            android:layout_width="@dimen/flex_item_length"
+            android:layout_height="@dimen/flex_item_length"
+            android:background="@color/colorAccent"
+            android:text="5" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+</LinearLayout>

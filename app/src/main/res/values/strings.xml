@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FlexboxLayout</string>
+
+    <string name="one" translatable="false">1</string>
+    <string name="two" translatable="false">2</string>
+    <string name="three" translatable="false">3</string>
+</resources>
