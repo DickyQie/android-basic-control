@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        >
+        <!--
+            搜索图标  左边
+            android:drawableLeft="@mipmap/icon_search"
+            android:drawablePadding="5dp"  图标和文字的间距
+            右边
+            android:drawableRight="@mipmap/round_close"
+            android:paddingRight="8dp"
+            android:imeOptions="actionSearch"  设置成搜索按钮
+        -->
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:hint="输入要搜索的商品"
+            android:background="@drawable/search_gray"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="9dp"
+            android:textSize="12sp"
+            android:drawableLeft="@mipmap/icon_search"
+            android:paddingLeft="9dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/round_close"
+            android:paddingRight="8dp"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:singleLine="true"
+            />
+        <TextView
+            android:id="@+id/search_close"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="取消"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e4e4e4"
+        />
+</LinearLayout>
