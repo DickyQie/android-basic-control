@@ -1,4 +1,4 @@
-# android沉浸状态栏和顶部状态栏背景色的设置
+## android沉浸状态栏和顶部状态栏背景色的设置
 
 <div id="article_content" class="article_content">
 
