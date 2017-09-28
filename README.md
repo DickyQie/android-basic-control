@@ -1,5 +1,4 @@
 ## Android--------工具类StatusBarUtil实现完美状态栏
- <p><span style="background-color:#ffffff; color:#000000">很早就想写这篇博客了，直到前几天有人问我这方面的问题才想起。</span></p> 
 <p><span style="background-color:#ffffff; color:#000000">沉浸式状态栏是从android Kitkat（Android 4.4）开始出现的,顶部状态栏的颜色可以根据开发需求改变，使得APP风格更加好看，更加美观。</span></p> 
 <p><span style="background-color:#ffffff; color:#000000">这是一个为Android App 设置状态栏的工具类， 可以在4.4及其以上系统中实现 沉浸式状态栏/状态栏变色，支持设置状态栏透明度。</span></p> 
 <p><span style="background-color:#ffffff; color:#000000">先来看看案例的效果图：</span></p> 
@@ -129,4 +128,4 @@ compile 'com.jaeger.statusbaruitl:library:1.3.0'
         &lt;item name="colorAccent"&gt;@color/colorAccent&lt;/item&gt;
         &lt;item name="windowNoTitle"&gt;true&lt;/item&gt;
         &lt;item name="windowActionBar"&gt;false&lt;/item&gt;
-    &lt;/style&gt;</code></pre> 
+  &lt;/style&gt;</code></pre> 
