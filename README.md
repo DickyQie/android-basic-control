@@ -1,4 +1,4 @@
-### Android------底部导航栏BottomNavigationBar
+### Android------底部导航栏BottomNavigationBar和底部切换添加按钮的声音
 <div id="cnblogs_post_body" class="blogpost-body"><p>Android 的底部导航栏 BottomNavigationBar 由Google官方Material design中增加的。</p>
 <p>Android底部导航栏的实现方式特别多，例如TabHost，TabLayout，或者TextView等，都可以实现底部导航栏的效果。</p>
 <p>但Google既然推出了还是可以尽量用他来实现底部导航栏这样的功能。</p>
