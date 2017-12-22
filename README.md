@@ -37,11 +37,9 @@
             }  
             @Override  
             public void onTabUnselected(int position) {  
-            
             }  
             @Override  
             public void onTabReselected(int position) {  
-  
             }  
         });  
 </div>
