@@ -1,19 +1,22 @@
-package com.zhangqie.bottomnavigationbar;
+package com.zhangqie.buttonvoice;
 
+import android.annotation.SuppressLint;
 import android.graphics.Color;
+import android.media.MediaPlayer;
+import android.media.SoundPool;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+        import android.os.Bundle;
 
 import com.ashokvarma.bottomnavigation.BadgeItem;
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
-import com.zhangqie.bottomnavigationbar.fragment.FourFragment;
-import com.zhangqie.bottomnavigationbar.fragment.OneFragment;
-import com.zhangqie.bottomnavigationbar.fragment.ThreeFragment;
-import com.zhangqie.bottomnavigationbar.fragment.TowFragment;
+import com.zhangqie.buttonvoice.fragment.FourFragment;
+import com.zhangqie.buttonvoice.fragment.OneFragment;
+import com.zhangqie.buttonvoice.fragment.ThreeFragment;
+import com.zhangqie.buttonvoice.fragment.TowFragment;
 
 import java.util.ArrayList;
 
@@ -24,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Fragment> mFragmentList = new ArrayList<>();
     BadgeItem badgeItem;
     FragmentManager mFragmentManager;
+
+    MediaPlayer music = null;// 播放器引用
+
+    SoundPool soundPool;
+    int soundID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView(){
         mFragmentManager=getSupportFragmentManager();
+        initSound();
         initFragment();
         showFragment(0);
         mBottomNavigationBar = (BottomNavigationBar) findViewById(R.id.bottom_navigation_bar);
@@ -55,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTabSelected(int position) {
+                //PlayMusic(R.raw.qipao);//方式1
+                playSound();//方式二
                 showFragment(position);
             }
 
@@ -93,42 +104,27 @@ public class MainActivity extends AppCompatActivity {
         mFragmentTransaction.commitAllowingStateLoss();
     }
 
-    /**
-     * Mode
-     xml：bnbMode
-     方法：setMode()
-     包含3种Mode:
+    private void PlayMusic(int MusicId) {
+        music = MediaPlayer.create(this, MusicId);
+        music.start();
+    }
 
-     MODE_DEFAULT
-     如果Item的个数<=3就会使用MODE_FIXED模式，否则使用MODE_SHIFTING模式
 
-     MODE_FIXED （固定大小）
-     。填充模式，未选中的Item会显示文字，没有换挡动画。
-     。宽度=总宽度/action个数
-     。最大宽度: 168dp
-     。最小宽度: 80dp
-     。Padding：6dp（8dp）、10dp、12dp
-     。字体大小：12sp、14sp
-
-     MODE_SHIFTING （不固定大小）
-     。换挡模式，未选中的Item不会显示文字，选中的会显示文字。在切换的时候会有一个像换挡的动画
-
-     Background Style
-
-     方法：setBackgroundStyles()
-     包含3种Style:
-
-     BACKGROUND_STYLE_DEFAULT
-     如果设置的Mode为MODE_FIXED，将使用BACKGROUND_STYLE_STATIC 。如果Mode为MODE_SHIFTING将使用BACKGROUND_STYLE_RIPPLE。
-
-     BACKGROUND_STYLE_STATIC
-     。点击的时候没有水波纹效果
-     。航条的背景色是白色，加上setBarBackgroundColor（）可以设置成你所需要的任何背景颜色
-
-     BACKGROUND_STYLE_RIPPLE
-     。点击的时候有水波纹效果
-     。导航条的背景色是你设置的处于选中状态的 Item的颜色（ActiveColor），也就是setActiveColorResource这个设置的颜色
-     */
+    @SuppressLint("NewApi")
+    private void initSound() {
+        soundPool = new SoundPool.Builder().build();
+        soundID = soundPool.load(this, R.raw.qipao, 1);
+    }
+    private void playSound() {
+        soundPool.play(
+                soundID,
+                0.9f,   //左耳道音量【0~1】
+                0.9f,   //右耳道音量【0~1】
+                0,     //播放优先级【0表示最低优先级】
+                0,     //循环模式【0表示循环一次，-1表示一直循环，其他表示数字+1表示当前数字对应的循环次数】
+                1     //播放速度【1是正常，范围从0~2】
+        );
+    }
 
 
 }

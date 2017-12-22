@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.zhangqie.bottomnavigationbar.MainActivity">
+    tools:context="com.zhangqie.buttonvoice.MainActivity">
 
     <FrameLayout
         android:id="@+id/fragment"
@@ -19,5 +19,4 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         />
-
 </LinearLayout>

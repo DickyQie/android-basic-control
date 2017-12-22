@@ -1,4 +1,4 @@
-package com.zhangqie.bottomnavigationbar;
+package com.zhangqie.buttonvoice;
 
 import org.junit.Test;
 
