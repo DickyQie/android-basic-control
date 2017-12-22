@@ -11,33 +11,7 @@
 <pre><span style="color: #008080">compile</span> <span style="color: #ff6600">'com.ashokvarma.android:bottom-navigation-bar:1.3.0'</span></pre>
 </div>
 <p>&nbsp;</p>
-<p>布局文件</p>
-<div class="cnblogs_code">
-<pre><span style="color: #0000ff">&lt;?</span><span style="color: #ff00ff">xml version="1.0" encoding="utf-8"</span><span style="color: #0000ff">?&gt;</span>
-<span style="color: #0000ff">&lt;</span><span style="color: #800000">LinearLayout </span><span style="color: #ff0000">xmlns:android</span><span style="color: #0000ff">="http://schemas.android.com/apk/res/android"</span><span style="color: #ff0000">
-    xmlns:tools</span><span style="color: #0000ff">="http://schemas.android.com/tools"</span><span style="color: #ff0000">
-    android:id</span><span style="color: #0000ff">="@+id/activity_main"</span><span style="color: #ff0000">
-    android:layout_width</span><span style="color: #0000ff">="match_parent"</span><span style="color: #ff0000">
-    android:layout_height</span><span style="color: #0000ff">="match_parent"</span><span style="color: #ff0000">
-    android:orientation</span><span style="color: #0000ff">="vertical"</span><span style="color: #ff0000">
-    tools:context</span><span style="color: #0000ff">="com.zhangqie.bottomnavigationbar.MainActivity"</span><span style="color: #0000ff">&gt;</span>
 
-    <span style="color: #0000ff">&lt;</span><span style="color: #800000">FrameLayout
-        </span><span style="color: #ff0000">android:id</span><span style="color: #0000ff">="@+id/fragment"</span><span style="color: #ff0000">
-        android:layout_width</span><span style="color: #0000ff">="match_parent"</span><span style="color: #ff0000">
-        android:layout_height</span><span style="color: #0000ff">="0dp"</span><span style="color: #ff0000">
-        android:layout_weight</span><span style="color: #0000ff">="1"</span><span style="color: #0000ff">/&gt;</span>
-
-    <span style="color: #0000ff">&lt;</span><span style="color: #800000">com</span><span style="color: #ff0000">.ashokvarma.bottomnavigation.BottomNavigationBar
-        android:id</span><span style="color: #0000ff">="@+id/bottom_navigation_bar"</span><span style="color: #ff0000">
-        android:layout_width</span><span style="color: #0000ff">="match_parent"</span><span style="color: #ff0000">
-        android:layout_height</span><span style="color: #0000ff">="wrap_content"</span><span style="color: #ff0000">
-        android:layout_gravity</span><span style="color: #0000ff">="bottom"</span>
-        <span style="color: #0000ff">/&gt;</span>
-
-<span style="color: #0000ff">&lt;/</span><span style="color: #800000">LinearLayout</span><span style="color: #0000ff">&gt;</span></pre>
-</div>
-<p>&nbsp;</p>
 <p>BottomNavigationBar的属性设置</p>
 <div class="cnblogs_code">
 <pre>mBottomNavigationBar =<span style="color: #000000"> (BottomNavigationBar) findViewById(R.id.bottom_navigation_bar);
