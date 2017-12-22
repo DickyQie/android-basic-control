@@ -31,22 +31,19 @@
                 .addItem(</span><span style="color: #0000ff">new</span> BottomNavigationItem(R.drawable.icon_my_normal, "我的"<span style="color: #000000">).setBadgeItem(badgeItem))
                 .initialise();<br>　　     <span style="color: #000000"><span style="color: #008000">//<span style="color: #008000">设置点击事件</span></span></span>
         mBottomNavigationBar.setTabSelectedListener(</span><span style="color: #0000ff">new</span><span style="color: #000000"> BottomNavigationBar.OnTabSelectedListener(){
-
-            @Override
-            </span><span style="color: #0000ff">public</span> <span style="color: #0000ff">void</span> onTabSelected(<span style="color: #0000ff">int</span><span style="color: #000000"> position) {
-                showFragment(position);
-            }
-
-            @Override
-            </span><span style="color: #0000ff">public</span> <span style="color: #0000ff">void</span> onTabUnselected(<span style="color: #0000ff">int</span><span style="color: #000000"> position) {
-
-            }
-
-            @Override
-            </span><span style="color: #0000ff">public</span> <span style="color: #0000ff">void</span> onTabReselected(<span style="color: #0000ff">int</span><span style="color: #000000"> position) {
-
-            }
-        });</span></pre>
+           @Override  
+            public void onTabSelected(int position) {  
+                showFragment(position);  
+            }  
+            @Override  
+            public void onTabUnselected(int position) {  
+            
+            }  
+            @Override  
+            public void onTabReselected(int position) {  
+  
+            }  
+        });  
 </div>
 <p>&nbsp;</p>
 <p>setMode的相关属性</p>
