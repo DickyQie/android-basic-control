@@ -18,7 +18,7 @@
 
 
 <p><span style="color:rgb(51,51,51); font-family:'Microsoft Yahei'; font-size:16px; line-height:28px; text-indent:32px">只有手机系统版本大于19,才执行判断中的代码，才能显示沉浸状态栏的效果。&nbsp;</span><br>
-<span style="color:rgb(51,51,51); font-family:'Microsoft Yahei'; font-size:16px; line-height:28px; text-indent:32px">同时，这几句代码要写在<setContentView(R.layout.XX);方法之前执行</span></p>
+<span style="color:rgb(51,51,51); font-family:'Microsoft Yahei'; font-size:16px; line-height:28px; text-indent:32px">同时，这几句代码要写在setContentView(R.layout.XX);方法之前执行</span></p>
 <p><a target="_blank" target="_blank" name="t1" style="font-family:'microsoft yahei'; line-height:35px; font-size:16px; text-indent:32px; color:rgb(12,137,207); background-color:rgb(255,255,255)"><br>
 </a></p>
 <span style="line-height:28px"></span>
