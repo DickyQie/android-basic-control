@@ -3,8 +3,8 @@
 <div id="article_content" class="article_content">
 
 <span style="font-family:'Microsoft Yahei'; line-height:28px; text-indent:32px"></span>
-<h3 id="一概述" style="font-size:16px; color:rgb(85,85,85); margin:0.8em 0px; padding:0px; font-weight:100; font-family:'microsoft yahei'; line-height:35px">
-<span style="font-family:'microsoft yahei'; font-size:14px; line-height:35px">法一：</span></h3>
+<h5 id="一概述" style="font-size:16px; color:rgb(85,85,85); margin:0.8em 0px; padding:0px; font-weight:100; font-family:'microsoft yahei'; line-height:35px">
+<span style="font-family:'microsoft yahei'; font-size:14px; line-height:35px">法一：</span></h5>
 <p style="margin-top:0px; margin-bottom:1.1em; padding-top:0px; padding-bottom:0px; font-family:'microsoft yahei'; line-height:35px">
 <span style="font-size:14px">现在很多应用都引用了沉浸式状态栏，如QQ，效果下图：</span></p>
 <p style="font-size:14px; color:rgb(85,85,85); margin-top:0px; margin-bottom:1.1em; padding-top:0px; padding-bottom:0px; font-family:'microsoft yahei'; line-height:35px">
@@ -42,8 +42,8 @@
 </span></p>
 <p style="margin-top:0px; margin-bottom:1.1em; padding-top:0px; padding-bottom:0px; line-height:35px">
 <span style="font-family:Microsoft YaHei; font-size:14px"></span></p>
-<h3 id="一概述" style="text-indent:32px; font-size:16px; color:rgb(85,85,85); margin:0.8em 0px; padding:0px; font-weight:100; font-family:'microsoft yahei'; line-height:35px">
-<span style="font-size:14px">法二：</span></h3>
+<h5 id="一概述" style="text-indent:32px; font-size:16px; color:rgb(85,85,85); margin:0.8em 0px; padding:0px; font-weight:100; font-family:'microsoft yahei'; line-height:35px">
+<span style="font-size:14px">法二：</span></h5>
 <p></p>
 <p style="margin-top:0px; margin-bottom:1.1em; padding-top:0px; padding-bottom:0px; line-height:35px">
 <span style="font-family:Microsoft YaHei; font-size:14px"><span style="color:rgb(51,51,51); font-family:'Microsoft Yahei'; font-size:16px; line-height:28px; text-indent:32px">在res目录下面新建一个values-v19文件夹，下面新建一个styles.xml文件，内容如下</span><br>
