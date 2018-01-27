@@ -1,4 +1,4 @@
-## android沉浸状态栏和顶部状态栏背景色的设置
+#### android沉浸状态栏和顶部状态栏背景色的设置
 
 <div id="article_content" class="article_content">
 
@@ -23,7 +23,7 @@
 </a></p>
 <span style="line-height:28px"></span>
 <p style="font-family:'microsoft yahei'; margin-top:0px; margin-bottom:1.1em; padding-top:0px; padding-bottom:0px; line-height:35px">
-<span style="font-size:14px">&nbsp;先贴下效果图，以便和实现过程中做下对比</span></p>
+<span style="font-size:14px">&nbsp;效果图</span></p>
 <p style="font-family:'microsoft yahei'; margin-top:0px; margin-bottom:1.1em; padding-top:0px; padding-bottom:0px; line-height:35px">
 <span style="font-size:14px"><img src="http://img.blog.csdn.net/20160726094643225?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt=""><br>
 </span></p>
